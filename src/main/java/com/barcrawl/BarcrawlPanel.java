@@ -93,30 +93,31 @@ public class BarcrawlPanel extends PluginPanel {
         SwingUtilities.invokeLater(this::refreshList);
     }
     private static final Set<Integer> EXCLUDED_CONSUMABLES = Set.of(
-            739,    // Bravery potion
-            756,    // Cadava potion
+            739, 756, // Cadava potion, bravery potion
+            1582, // Blamish oil
+            2245, 2098, 2096, 2094, 2100, 2197, 2173, // Odd gnome foods
+            4559, 4563, 4562, 4560, // Deep blue, green, red, white sweets
             11205,  // Shrunk ogleroot
-            28383,  // Strange potion
-            28388,  // Strangler serum
-            25812,  // Sulphur potion
-            25813,  // Shielding potion
-            33802,  // Mysterious jerky
-            29950,  // Principum red
-            29969,   // Xochipaltic rosé
+            13413, 13403, 13412, 13409, 13414, 13418, // Servery foods
+            28383, 11204,  // Strange potion, shrink-me-quick
+            28388, 25812, 25813, // Strangler serum, sulphur, shielding potion
+            26916, 26927, // Special hot sauce, sounds great, melted easter egg
+            27485, 27561, 27562, // Light beer, mulled pine, bruised banana..
+            33802, 33820, 31174, 25958, // Mysterious jerky, smelly kebab, corrupted shark, paddlefish
+            33819, // Jar of congealed blood, gross.
+            29950, 29969, // Principum red, Xochipaltic rosé
             29784, // Araxyte venom sac
             24774, // Blood pint
             22430, // Bloody bracer
             26920, // Big bucket of camel milk
             31856, // Bottle of crystal clear water
             33128, 33130, // Milk sample
-            2251, 2257, 2261, 2263, 2265,
-            2267, 2269, 2271, 2273, 2275, 2279, // Unfinished battas
+            2251, 2257, 2261, 2263, 2265, 2267, 2269, 2271, 2273, 2275, 2279, // Unfinished battas
             2179, 2181, 2183, 2189, 2193, // Unfinished bowls
             2042, 2044, 2046, 2050, 2052, 2056,// Unfinished cocktails
-            2058, 2060, 2062, 2066, 2068, 2070,
-            2072, 2076, 2078, 2082, 2086, 2088,
-            2090,
-            2207, 2211, 2215 // Unfinished crunchy
+            2058, 2060, 2062, 2066, 2068, 2070, 2072, 2076, 2078, 2082, 2086, 2088, 2090, 2207, 2211, 2215, // Unfinished crunchy
+            7943, 7942, 337, 6202, 6206, 21293 // Fresh monkfish, giant carp, fishlike thing, infernal eel,
+
     );
 
     private void refreshList() {
